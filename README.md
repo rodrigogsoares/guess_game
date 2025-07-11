@@ -63,8 +63,8 @@ Acesse o jogo em: [http://localhost:3000](http://localhost:3000)
 - Rebuild apenas os containers do backend:
 
 ```bash
-docker-compose build backend1 backend2
-docker-compose up -d
+docker compose build backend1 backend2
+docker compose up -d
 ```
 
 **Frontend**:
@@ -72,8 +72,8 @@ docker-compose up -d
 - Rebuild o frontend:
 
 ```bash
-docker-compose build frontend
-docker-compose up -d
+docker compose build frontend
+docker compose up -d
 ```
 
 **DB (PostgreSQL)**:
@@ -87,8 +87,8 @@ db:
 - Baixe a nova imagem e reinicie:
 
 ```bash
-docker-compose pull db
-docker-compose up -d
+docker compose pull db
+docker compose up -d
 ```
 
 - **NGINX**: edite `frontend/nginx.conf`
@@ -97,7 +97,7 @@ docker-compose up -d
 ## Derrubar os serviços
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Observações Finais
